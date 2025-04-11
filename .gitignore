@@ -1,0 +1,21 @@
+# Build directories
+cmake-build-*/
+
+# IDE files
+.idea/
+.codebuddy/
+
+# Compiled Object files
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executables
+*.exe
+*.out
+
+# Dependency files
+*.d
