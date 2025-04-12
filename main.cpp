@@ -40,14 +40,15 @@ int main() {
     inputValue();
     int card1_value = input;
 
-    if (!askToContinue()) {
-      continue;
-    }
 
     // Round 2: will the next card be higher or lower than the first? (equal values are considered higher)
     double odds = round2_percentage(card1_value);
     std::cout << "Pick " << ((odds < 0) ? "lower; " : "higher; ") << "your odds are " << std::abs(odds * 100.0) << "%.\n";
     //note: ternary has lower precedence than insertion operator, so must group that in parentheses
+
+    if (!askToContinue()) {
+      continue;
+    }
 
     inputValue();
     int card2_value = input;
